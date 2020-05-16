@@ -15,7 +15,7 @@ Modify the `Dockerfile` with your key name and run:
 
 After the build succeeds (should be pretty fast and easy) run:
 
-`docker run -v /fullpath/to/where/you/want/your/files:/ukb ukbgene "ukbgene imp -c1 -a/.ukbkey`
+`docker run -v /fullpath/to/where/you/want/your/files:/ukb ukbgene "ukbgene imp -c1 -a/.ukbkey"`
 
 And this will download the imputation data for the first chromosome (~180 GB) for the UK Biobank cohort.  Obviously, you should replace `/fullpath/to/where/you/want/your/files` with whatever you want to store it, and `imp` with the data type you want `cal` for base genotype calls, `rel` gives you relatedness files, `hap` haplotype files, etc.  Also, replace `-c1` with chromsome you want.  It's all [in the UKB documentation](https://biobank.ndph.ox.ac.uk/showcase/showcase/docs/ukbgene_instruct.html).  Then of course, replace `.ukbkey` with your key name and do so in the `Dockerfile` or just rename your key to `.ukbkey` (it's what I did).
 
