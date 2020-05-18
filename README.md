@@ -11,7 +11,7 @@ Obviously, I cannot upload the `.ukbkey` authentication file here, as it is spec
 
 Modify the `Dockerfile` with your key name and run:
 
-`docker build -t ukbgene:latest`
+`docker build -t ukbgene:latest .`
 
 After the build succeeds (should be pretty fast and easy) run:
 
